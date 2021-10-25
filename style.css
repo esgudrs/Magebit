@@ -1,0 +1,361 @@
+html, body { 
+    margin:0; 
+    padding:0; 
+    overflow: auto; 
+}
+
+body {
+    background-image: url('/img/image_summer.png');
+    background-repeat: no-repeat;
+    background-position: 40vw ;
+    background-size: cover;
+}
+
+.container {
+    max-width: 40%;
+}
+
+.nav {
+    display: flex;
+    max-width: 600px;
+    margin: auto;
+    justify-content: space-between;
+    padding: 15px;
+    padding-top: 100px;
+}
+
+#logo{
+    content: url('/img/logo_pineapple.png');
+}
+
+.logo {
+    max-width: 118px;
+    height: 40px;
+}
+
+.nav-buttons {
+    /* flex: 1 1 auto; */
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.nav-buttons>a {
+    margin-left: 15px ;
+
+}
+
+a {
+    text-decoration: none;
+    color: #6A707B;
+}
+
+.content {
+    max-width: 400px;
+    margin: auto;
+    margin-top: 234px;
+}
+
+
+.content>h4 {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 100;
+    color: #6A707B;
+}
+
+.content>h2 {
+    font-family: Georgia;
+    font-size: 32px;
+    font-weight: 100;
+}
+
+.email {
+    border: 1px solid #E3E3E4;
+    width: 579px;
+    height: 70;
+    padding: 23px 0 23px 40px;
+    border-left: 3px solid #4066A5;
+    border-right: none;
+}
+
+form>.email-container {
+    position: relative;
+    display:flex;
+    flex-direction:row;
+    border: 1px solid #E3E3E4;
+    margin: 50px 0 50px -44px;
+    width: 663px;
+    height: 70;
+}
+
+#emailMsg {
+    position: absolute;
+    color: red;
+    bottom: -25px;
+    left: 44px;
+}
+
+
+form>.email-container:hover {
+    border: 1px solid #4066A5;
+    box-shadow: 1px 10px 20px #1318210F;
+}
+
+form>.email-container:focus-within {
+    border: 1px solid #4066A5;
+    box-shadow: 1px 10px 20px #1318210F;
+
+}
+
+form>.email-container>button {
+    width: 95px;
+    background-color: white;
+    border: none;
+    border: 1px solid #E3E3E4;
+    border-left: none;
+    color: #6A707B;
+}
+
+form>.email-container>button:hover {
+    cursor: pointer;
+    color: #4066A5;
+    /* fill: #C13584; */
+}
+
+input:focus {
+    outline: none;
+}
+
+.checkbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#tosMsg {
+    position: absolute;
+    color: red;
+    bottom: -25px;
+}
+
+.checkbox>label {
+    font-family: Georgia;
+    font-size: 16px;
+    font-weight: 100;
+    margin-left: 15px;
+    color: #6A707B;
+}
+  
+input[type="checkbox"] {
+    width: 26px;
+    height: 26px;
+    margin: 0;    
+}
+
+
+hr {
+    border-radius: 7px 7px 7px 7px;
+    margin-bottom: 50px;
+    border-top: 1px solid #E3E3E4;
+}
+
+label {
+    margin-left: 15px;
+}
+
+label>a {
+    text-decoration: underline;
+    color: #6A707B;
+}
+
+label>a:hover {
+    text-decoration: underline;
+    color: #4066A5;
+}
+
+label>a:active {
+    text-decoration: underline;
+    color: #233759;
+}
+
+.icon-group {
+    display: flex;
+    justify-content: space-between;
+    max-width: 244px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.facebook:hover {
+    color: white;
+    fill: #4267B2;
+    transition: .5s;
+    border-radius:100px;
+    box-shadow: 1px 20px 50px 1px #1318214D;
+    border: none;
+}
+.facebook:active {
+    color: white;
+    fill: #2F4A80;
+    transition: .5s;
+}
+.insta:hover {
+    color: white;
+    fill: #C13584;
+    transition: .5s;
+    border-radius:100px;
+    box-shadow: 1px 20px 50px 1px #1318214D;
+}
+.insta:active {
+    color: white;
+    fill: #8F2762;
+    transition: .5s;
+}
+.twitter:hover {
+    color: white;
+    fill: #1DA1F2;
+    transition: .5s;
+    border-radius:100px;
+    box-shadow: 1px 20px 50px 1px #1318214D;
+}
+.twitter:active {
+    color: white;
+    fill: #177FBF;
+    transition: .5s;
+}
+.yt:hover {
+    color: white;
+    fill: #FF0000;
+    transition: .5s;
+    border-radius:100px;
+    box-shadow: 1px 20px 50px 1px #1318214D;
+}
+.yt:active {
+    color: white;
+    fill: #CC0000;
+    transition: .5s;
+}
+
+@media (max-width: 769px) {
+
+    body {
+        background-image: url('/img/image_summer.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center ;
+    }
+    #logo{
+        content: url('/img/pineapple.png');
+    }
+
+    .container {
+        max-width: 100%;
+    }
+    
+    .nav {
+        display: flex;
+        max-width: 100vw;
+        padding: 15px;
+        background-color: white;        
+        justify-content: space-between;
+        
+    }
+    
+    .nav-buttons {
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }    
+    
+    .nav-buttons>a {
+        font-size: 14px;
+    }
+    .content {
+        background-color: white;
+        margin: auto;
+        margin-top: 188px;
+        margin-bottom: 188px;
+        width: 305px;
+        padding: 30px;
+    }
+    
+    .content>h4 {
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: 100;
+        color: #6A707B;
+        width: 295px;
+    }
+    
+    .content>h2 {
+        margin: 0;
+        font-family: Georgia;
+        font-size: 24px;
+        font-weight: 100;
+        width: 295px;
+    }
+    
+    
+    form>.email-container {
+        display:flex;
+        flex-direction:row;
+        border: 1px solid #E3E3E4;
+        margin: 0px;
+        margin-bottom: 20px;
+        width: 295px;
+        height: 70;
+    }
+
+    #emailMsg {
+        position: absolute;
+        color: red;
+        bottom: -20px;
+        left: 0;
+    }
+        
+    #tosMsg {
+        position: absolute;
+        bottom: -20px;
+    }    
+      
+    input[type="submit"] {
+        border: none;
+        border: 1px solid #E3E3E4;
+        border-left: none;
+        background-color: #fff;
+        background-image: url('/img/ic_arrow.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    input[type="submit"]:hover {
+        /* max-width: 95px; */
+        border: none;
+        background-color: #4066A5;
+        cursor: pointer;
+    }
+    
+    .checkbox {
+        margin-bottom: 20px;
+    }
+
+    hr {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    
+    .icon-group {
+        margin-bottom: 0;
+    }
+
+}
+
+
+
+
+
+
